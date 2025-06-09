@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- === META CONFIGURATION === -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Syed Muhammad Irtiza Haider" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page contains details about The Little Taco Shop"
+    />
+
+    <!-- === RESOURCES === -->
+    <link rel="icon" href="../Images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/main.js" defer></script>
+
+    <!-- === PAGE TITLE === -->
+    <title>About LTS</title>
+  </head>
+
+  <body>
+    <!-- === HEADER === -->
+    <header class="header">
+      <!-- Website Title -->
+      <h1 class="header__h1">The Little Taco Shop</h1>
+
+      <!-- Navigation Menu -->
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- === HERO IMAGE === -->
+    <section class="hero">
+      <figure>
+        <!-- Hero Image with Accessibility -->
+        <img
+          src="../Images/tacos_delicioso_1000x667.png"
+          alt="Taocs Delicioso"
+          title="We love taocs!"
+          width="1000"
+          height="667"
+        />
+        <figcaption class="offscreen">Try these Delicious tacos</figcaption>
+      </figure>
+    </section>
+
+    <!-- === MAIN CONTENT: ABOUT SECTION === -->
+    <main class="main">
+      <article class="main__article about" id="about">
+        <!-- About Heading -->
+        <h2>About <abbr title="The Little Taco Shop">LTS</abbr></h2>
+
+        <!-- About Description -->
+        <p>
+          <abbr title="The Little Taco Shop">LTS</abbr> was founded in 2022. Our
+          shop was built from the <strong>love of tacos</strong> 🌮🌮🌮. We hope
+          our shop adds a unique little place in your town.
+        </p>
+
+        <!-- Taco Trivia Section -->
+        <aside class="about__trivia">
+          <h3>Taco Trivia</h3>
+          <details>
+            <summary>
+              When did the first taco appear in the United States?
+            </summary>
+            <p class="about__trivia-answer">
+              Jeffrey M. Pilcher, taco historian and professor of history at the
+              University of Minnesota, says the earliest mention of tacos in the
+              United States is in a newspaper from
+              <time datetime="1905">1905</time>. (Source:
+              <cite>
+                <a
+                  href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/"
+                  target="_blank"
+                  >Smithsonian Magazine</a
+                > </cite
+              >)
+            </p>
+          </details>
+        </aside>
+      </article>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
+    </footer>
+  </body>
+</html>

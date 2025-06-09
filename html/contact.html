@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Configuration -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Syed Muhammad Irtiza Haider" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page contains a form to contact us"
+    />
+
+    <!-- External Styles & Scripts -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/main.js" defer></script>
+
+    <title>Contact LTS</title>
+  </head>
+
+  <body>
+    <!-- === HEADER === -->
+    <header class="header">
+      <!-- Shop Title -->
+      <h1 class="header__h1">The Little Taoc Shop</h1>
+
+      <!-- Navigation Menu -->
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- === HERO SECTION === -->
+    <section class="hero">
+      <figure>
+        <!-- Hero Image with Alt and Title -->
+        <img
+          src="../Images/tacos_close_up_1000x649.png"
+          alt="A close up picture of Tacos"
+          title="We love close up of tacos"
+          width="1000"
+          height="649"
+        />
+        <figcaption class="offscreen">Little Taco Shop Tacos</figcaption>
+      </figure>
+    </section>
+
+    <!-- === MAIN CONTENT === -->
+    <main class="main">
+      <!-- Store Location Info -->
+      <article class="main__article">
+        <h2>Our Location</h2>
+        <address>
+          555 Taco Temptation Lane, Suite T<br />
+          Kansas City, MO 55555-5555<br /><br />
+          Phone: <a href="tel:+5555555555">555-555-5555</a>
+        </address>
+      </article>
+
+      <hr />
+
+      <!-- Contact Form Section -->
+      <article class="main__article contact">
+        <h2 class="contact__h2">Our Contact Form</h2>
+
+        <!-- Contact Form -->
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="contact__form"
+        >
+          <!-- Form Field Group -->
+          <fieldset class="contact__fieldset">
+            <legend class="offscreen">Send Us A Message</legend>
+
+            <!-- Name Field -->
+            <p>
+              <label for="name">Name:</label>
+              <input
+                class="contact__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                required
+              />
+            </p>
+
+            <!-- Email Field -->
+            <p>
+              <label for="email">Email:</label>
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                required
+              />
+            </p>
+
+            <!-- Message Field -->
+            <p>
+              <label for="message">Your Message:</label><br />
+              <textarea
+                class="contact__textarea"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Type your message here"
+              ></textarea>
+            </p>
+          </fieldset>
+
+          <!-- Form Buttons -->
+          <button type="submit" class="contact__button">Send</button>
+          <button type="reset" class="contact__button">Reset</button>
+        </form>
+      </article>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="footer">
+      <p>&copy; <time id="year"></time> The Little Taco Shop</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata for proper rendering and SEO -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Syed Muhammad Irtiza Haider" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the home page of a little taco shop"
+    />
+
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="../Images/favicon.ico" />
+
+    <!-- Linking external CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Linking JavaScript file, deferred until DOM is ready -->
+    <script src="../js/main.js" defer></script>
+
+    <!-- Page Title -->
+    <title>Little Taco Shop</title>
+  </head>
+
+  <body>
+    <!-- === HEADER === -->
+    <header class="header">
+      <!-- Shop Title -->
+      <h1 class="header__h1">The Little Taco Shop</h1>
+
+      <!-- Navigation Menu -->
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <!-- Navigation Links -->
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- === HERO SECTION === -->
+    <section class="hero">
+      <!-- Hero Heading (Spanish for Welcome) -->
+      <h2 class="hero__h2">Bienvenidos</h2>
+
+      <!-- Tacos Image with Caption -->
+      <figure>
+        <img
+          src="../Images/tacos_and_drink_1000x667.png"
+          alt="Picture of tacos and drinks"
+          title="We love tacos and drinks!"
+          width="1000px"
+          height="667px"
+        />
+        <!-- Descriptive caption for screen readers -->
+        <figcaption class="offscreen">Tacos and a drink</figcaption>
+      </figure>
+    </section>
+
+    <!-- === MAIN CONTENT === -->
+    <main class="main">
+      <!-- Menu Article Section -->
+      <article id="menu" class="main__article menu">
+        <!-- Menu Heading -->
+        <h2 class="menu__h2">Our Menu</h2>
+
+        <!-- Table of Taco Prices -->
+        <table class="menu__container">
+          <caption class="offscreen">
+            Our Tacos
+          </caption>
+
+          <!-- Table Headers -->
+          <thead>
+            <tr>
+              <th class="menu__header" scope="col">Tacos</th>
+              <th class="menu__header" scope="col">Quantity</th>
+              <th class="menu__header" scope="col">Price</th>
+            </tr>
+          </thead>
+
+          <!-- Menu Items in Table Body -->
+          <tbody>
+            <!-- Crunchy Taco Options -->
+            <tr>
+              <th class="menu__item menu__cr" scope="row" rowspan="3">
+                Crunchy
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$1.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$2.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$3.25</td>
+            </tr>
+
+            <!-- Soft Taco Options -->
+            <tr>
+              <th class="menu__item menu__sf" scope="row" rowspan="3">Soft</th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$2.00</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$3.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$4.50</td>
+            </tr>
+          </tbody>
+
+          <!-- Chips & Salsa Row in Footer -->
+          <tfoot>
+            <tr>
+              <td class="menu__item menu__cs" colspan="3">
+                Chips &amp; Salsa $2
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <!-- Back to Top Anchor -->
+        <p class="center">
+          <a href="#">Back To Top</a>
+        </p>
+      </article>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="footer">
+      <p>
+        <!-- Dynamic copyright -->
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
+    </footer>
+  </body>
+</html>
