@@ -34,12 +34,16 @@ A simple, responsive multi-page website for a fictional taco restaurant. This pr
 
 ---
 
+## View Project
+
+## The project can viewed in browser by clicking [view page](https://taco-shop-lts.netlify.app)
+
 ## 📂 Folder Structure
 
 ```
 Taco Shop Website/
+│── index.html
 ├── html/
-│ ├── index.html
 │ ├── about.html
 │ ├── contact.html
 │ └── hours.html
